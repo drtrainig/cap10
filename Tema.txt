@@ -1,6 +1,7 @@
 Incercati la probleme sa faceti debug sa exersati.
 Problema 1.
 Se cere sa se creeze un program simplu in care se citesc de la tastatura doua numere de tip int si se afiseaza suma lor.
+Se cere sa se faca debug pe fiecare linie pentru exercitiu. (Incercati de mai multe ori folosind si F8 si F9 ca la curs).
 
 Problema 2
 Sa se creeze un program simplu prin care se citesc dintr-un fisier "cuvinte.txt" texte de pe fiecare linie. (Se va citi cu metoda de la Exemplu1 de la curs)
@@ -12,4 +13,5 @@ Sa se creeze un program simplu prin care se citesc dintr-un fisier "numere.txt" 
 Problema 4. (Optional)
 Sa se creeze un program prin care se citesc dintr-un fisier liniile acestuia (folosind metoda de la Exemplul 2). "problema4.txt"
 Se cere ca sa se introduca intr-o lista doar liniile din fisier care nu contin litere mari.
+
 
