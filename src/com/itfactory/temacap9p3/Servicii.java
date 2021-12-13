@@ -14,12 +14,13 @@ public class Servicii {
         boolean existaPersoana = false;
         for (Person person : listaDePersoane) {
             if (person.getCNP() == CNP) {
-                System.out.println("Numele persoanei cu CNP: "+ CNP +" este: " + person.getNumeComplet());
+                System.out.println("Persoana: " + person.getNumeComplet());
                 existaPersoana = true;
+                break;
             }
         }
         if (!existaPersoana) {
-            throw new ServiceException("Nu exista nicio persoana cu acest CNP: " + CNP);
+            throw new ServiceException("Nu s-a gasit persoana cu CNP-ul :" + CNP);
         }
     }
 
@@ -27,6 +28,18 @@ public class Servicii {
         if (listaDePersoane.contains(person)) {
             throw new ServiceException("Persoana exista deja in lista");
         }
+        if (existaPersoana(person.getCNP())) {
+            throw new ServiceException("Exista deja o persoana cu acest CNP");
+        }
         listaDePersoane.add(person);
+    }
+
+    private boolean existaPersoana(long CNP) {
+        for (Person person : listaDePersoane) {
+            if (person.getCNP() == CNP) {
+                return true;
+            }
+        }
+        return false;
     }
 }
