@@ -10,8 +10,24 @@ Se cere sa se parcurga lista de cuvinte citita din fisier si sa se afiseze doar 
 Problema 3.
 Sa se creeze un program simplu prin care se citesc dintr-un fisier "numere.txt" doua numere de tip int si se afiseaza suma lor.
 
-Problema 4. (Optional)
+Problema 4. 
 Sa se creeze un program prin care se citesc dintr-un fisier liniile acestuia (folosind metoda de la Exemplul 2). "problema4.txt"
 Se cere ca sa se introduca intr-o lista doar liniile din fisier care nu contin litere mari.
 
+Probleme Optionale:
+Problema 5
+Sa se creeze un proiect in care se cere sa se creeze copii ale unui fisier.
+Programul va primi de la tastatura numele fisierului pentru care se va face o copie. 
+Programul va verifica daca exista fisierul pentru care se cere copia, iar daca nu, se va arunca o exceptie. (Creeati voi exceptia)
+In cazul in care exista deja o copie a fisierului se va concatena textul "Copy" la inceputul acestuia.
+Exemplu:
+Scenariu 1. Se introduce numele fisierului "fisier.txt" -> Copia va fi "Copy fisier.txt"
+Scenariu 2. Se introduce din nou numele fisierului "fisier.txt" dar deja exisa "Copy fisier.txt". Atunci noua copie va fi "Copy Copy fisier.txt"
+Scenariu 3. Se introduce din nou numele fisierului "fisier.txt" dar deja exisa "Copy Copy fisier.txt". Atunci noua copie va fi "Copy Copy Copy fisier.txt"
+etc....
 
+Problema 6
+Sa se scrie un program prin care se creeaza o clasa de ServiciiCitire prin care se vor citi date din fisiere.
+In aceasta clasa se cere sa se creeze
+    a. O metoda care verifica daca un fisier este gol sau nu. (metoda va primi ca parametru numele/calea fisierului si va returna boolean)
+    b. O metoda care verifica daca un anumit fisier contine un anumit cuvant. (metoda ca primi ca parametrii numele/calea fisierului, un String ce va reprezenta cuvantul cautat si va returna boolean).
